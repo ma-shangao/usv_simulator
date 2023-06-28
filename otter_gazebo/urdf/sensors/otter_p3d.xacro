@@ -4,7 +4,7 @@
     <gazebo>
       <plugin name="p3d_plugin_${name}" filename="libgazebo_ros_p3d.so">
         <bodyName>base_link</bodyName>
-        <frameName>map</frameName>
+        <frameName>world</frameName>
         <updateRate>2.0</updateRate>
         <topicName>${name}</topicName>
         <xyzOffset>0 0 0</xyzOffset>
