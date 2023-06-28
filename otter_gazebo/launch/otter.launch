@@ -17,11 +17,11 @@
   <arg name="Y" default="0" />
 
   <!-- Do you want to enable sensors? -->
-  <arg name="top_camera_enabled"   default="false" />
+  <arg name="top_camera_enabled"   default="true" />
   <arg name="gps_enabled"          default="true" />
   <arg name="imu_enabled"          default="true" />
-  <arg name="lidar_enabled"        default="true" />
-  <arg name="velodyne_enabled"     default="false" />
+  <arg name="lidar_enabled"        default="false" />
+  <arg name="velodyne_enabled"     default="true" />
   <arg name="ground_truth_enabled" default="true" />
   <arg name="direct_control_plugin" default="false" />
 
