@@ -71,6 +71,12 @@
     <!-- Publishes static transforms (gps, imu, cameras, etc) to /tf -->
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="rob_st_pub" />
 
+    <!-- Odom -> base_link filtering -->
+    <include file="$(find otter_gazebo)/launch/localization.launch">
+      <arg name="ekf_loc_pubilish_tf" default="true" /> 
+    </include>
+
+
   </group>
 
 </launch>
