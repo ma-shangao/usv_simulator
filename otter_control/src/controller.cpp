@@ -142,7 +142,7 @@ double OtterController::getYaw()
   static tf2_ros::TransformListener tfListener(tfBuffer);
   geometry_msgs::TransformStamped tfStamped;
   try {
-    tfStamped = tfBuffer.lookupTransform("map", "base_link", ros::Time(0.0), ros::Duration(1.0));
+    tfStamped = tfBuffer.lookupTransform("odom", "base_link", ros::Time(0.0), ros::Duration(1.0));
   } catch (tf2::TransformException& ex) {
     ROS_WARN("%s", ex.what());
     return false;
